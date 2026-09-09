@@ -1,0 +1,28 @@
+body{
+    font-family: monospace;
+    background-color:black;
+}
+
+h1{
+    color:crimson;
+}
+
+p{
+    color:white;
+}
+
+h6{
+    color:dimgray;
+}
+
+a{
+    color:black;
+}
+
+#spoopy {
+    font-size: 100px
+}
+
+#bwah {
+    height: 50px
+}

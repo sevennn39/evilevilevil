@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ouija (talk to the dead)</title>
+    <link href = "style.css" rel = "stylesheet" type = "text/css">
+</head>
+<script>
+    function dragstartHandler(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function dragoverHandler(ev) {
+  ev.preventDefault();
+}
+
+function dropHandler(ev) {
+  ev.preventDefault();
+  const data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));}
+
+</script>
+
+<body>
+    <img src = "https://www.baltimoremagazine.com/wp-content/uploads/2019/06/ouija-main.jpg" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+    <img src = "planch.png" draggable="true" ondragstart="DragEvent">
+</body>
+</html>
